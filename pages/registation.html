@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Beauty - Registration</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ffd6e7, #f8a9c4);
+    }
+
+    .container {
+      width: 900px;
+      max-width: 95%;
+      display: flex;
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .left {
+      width: 45%;
+      padding: 50px 35px;
+      background: linear-gradient(160deg, #e91e63, #ad1457);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .left h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .left p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .beauty-icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+
+    .right {
+      width: 55%;
+      padding: 40px;
+    }
+
+    .right h2 {
+      color: #ad1457;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .input-box {
+      margin-bottom: 16px;
+    }
+
+    .input-box label {
+      display: block;
+      color: #555;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      outline: none;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .input-box input:focus {
+      border-color: #e91e63;
+      box-shadow: 0 0 5px rgba(233, 30, 99, 0.25);
+    }
+
+    .terms {
+      font-size: 13px;
+      color: #666;
+      margin: 10px 0 20px;
+    }
+
+    .terms input {
+      accent-color: #e91e63;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #e91e63, #ad1457);
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .register-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(173, 20, 87, 0.3);
+    }
+
+    .login {
+      text-align: center;
+      margin-top: 18px;
+      color: #777;
+    }
+
+    .login a {
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        padding: 30px;
+      }
+
+      .left h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="left">
+      <div class="beauty-icon">💄</div>
+      <h1>Glow Beauty</h1>
+      <p>
+        Discover beauty, confidence and elegance.
+        Create your account and explore our amazing
+        collection of cosmetics.
+      </p>
+    </div>
+
+    <div class="right">
+      <h2>Create Account</h2>
+      <p class="subtitle">Join our beauty community today!</p>
+
+      <form>
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="input-box">
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="input-box">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm your password" required>
+        </div>
+
+        <div class="terms">
+          <input type="checkbox" required>
+          I agree to the Terms & Conditions
+        </div>
+
+        <button type="submit" class="register-btn">
+          Register Now
+        </button>
+      </form>
+
+      <p class="login">
+        Already have an account?
+        <a href="#">Login</a>
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
