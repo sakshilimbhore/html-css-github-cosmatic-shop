@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders - Glow Cosmetics</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff7fa;
+      color: #3d252d;
+    }
+
+    header {
+      background: linear-gradient(135deg, #e8a0b8, #c96f91);
+      color: white;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    h1 {
+      color: #b64f76;
+      margin-bottom: 25px;
+    }
+
+    .order-card {
+      background: white;
+      border-radius: 15px;
+      padding: 22px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 20px rgba(180, 79, 118, 0.12);
+      border-left: 5px solid #d982a3;
+    }
+
+    .order-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f1d9e2;
+      padding-bottom: 15px;
+      margin-bottom: 18px;
+    }
+
+    .order-id {
+      font-weight: bold;
+      color: #8f3d5d;
+    }
+
+    .status {
+      background: #e5f6e9;
+      color: #31804a;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .product img {
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #fde9f0;
+    }
+
+    .product h3 {
+      color: #633342;
+      margin-bottom: 6px;
+    }
+
+    .product p {
+      color: #8a6873;
+      font-size: 14px;
+    }
+
+    .price {
+      margin-left: auto;
+      font-weight: bold;
+      color: #b64f76;
+    }
+
+    .order-footer {
+      border-top: 1px solid #f1d9e2;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .total {
+      font-size: 18px;
+      font-weight: bold;
+      color: #7f304f;
+    }
+
+    .btn {
+      background: #c96f91;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #a94f72;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .order-header,
+      .order-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .price {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">✨ Glow Cosmetics</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Cart</a>
+      <a href="#">Orders</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <h1>My Orders</h1>
+
+    <!-- Order 1 -->
+    <div class="order-card">
+
+      <div class="order-header">
+        <div>
+          <div class="order-id">Order #GC10245</div>
+          <small>Placed on 5 Oct 2026</small>
+        </div>
+
+        <span class="status">Delivered</span>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/75" alt="Lipstick">
+
+        <div>
+          <h3>Rose Matte Lipstick</h3>
+          <p>Shade: Rose Pink | Qty: 1</p>
+        </div>
+
+        <div class="price">₹599</div>
+      </div>
+
+      <div class="order-footer">
+        <div class="total">Total: ₹599</div>
+        <a href="#" class="btn">View Details</a>
+      </div>
+
+    </div>
+
+
+    <!-- Order 2 -->
+    <div class="order-card">
+
+      <div class="order-header">
+        <div>
+          <div class="order-id">Order #GC10231</div>
+          <small>Placed on 2 Oct 2026</small>
+        </div>
+
+        <span class="status">Delivered</span>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/75" alt="Face Serum">
+
+        <div>
+          <h3>Glow Vitamin C Serum</h3>
+          <p>30ml | Qty: 1</p>
+        </div>
+
+        <div class="price">₹799</div>
+      </div>
+
+      <div class="order-footer">
+        <div class="total">Total: ₹799</div>
+        <a href="#" class="btn">View Details</a>
+      </div>
+
+    </div>
+
+
+    <!-- Order 3 -->
+    <div class="order-card">
+
+      <div class="order-header">
+        <div>
+          <div class="order-id">Order #GC10198</div>
+          <small>Placed on 28 Sep 2026</small>
+        </div>
+
+        <span class="status">Delivered</span>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/75" alt="Face Cream">
+
+        <div>
+          <h3>Hydrating Face Cream</h3>
+          <p>50ml | Qty: 2</p>
+        </div>
+
+        <div class="price">₹1,198</div>
+      </div>
+
+      <div class="order-footer">
+        <div class="total">Total: ₹1,198</div>
+        <a href="#" class="btn">View Details</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
